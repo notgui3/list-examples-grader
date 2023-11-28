@@ -23,6 +23,7 @@ fi
 # Move the necessary files to the grading-area directory
 cp -r student-submission/ListExamples.java grading-area/ListExamples.java
 cp -r TestListExamples.java grading-area/TestListExamples.java
+cp -r lib grading-area/lib
 
 # Compile the tests and the student's code
 cd grading-area

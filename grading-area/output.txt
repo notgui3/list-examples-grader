@@ -1,12 +1,38 @@
 JUnit version 4.13.2
-.E
-Time: 0.524
-There was 1 failure:
-1) testMergeRightEnd(TestListExamples)
+...E.E..E...
+Time: 35.197
+There were 3 failures:
+1) testMergeDouble(TestListExamples)
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3513)
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3482)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base/java.util.ArrayList.add(ArrayList.java:483)
+	at java.base/java.util.ArrayList.add(ArrayList.java:496)
+	at ListExamples.merge(ListExamples.java:42)
+	at TestListExamples.testMergeDouble(TestListExamples.java:67)
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000002c136012400.invokeVirtual(LambdaForm$DMH)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000002c136013000.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+2) testMergeRightEnd(TestListExamples)
 org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
 	at ListExamples.merge(ListExamples.java:43)
-	at TestListExamples.testMergeRightEnd(TestListExamples.java:17)
+	at TestListExamples.testMergeRightEnd(TestListExamples.java:20)
+3) testMergeString(TestListExamples)
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3513)
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3482)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base/java.util.ArrayList.add(ArrayList.java:483)
+	at java.base/java.util.ArrayList.add(ArrayList.java:496)
+	at ListExamples.merge(ListExamples.java:42)
+	at TestListExamples.testMergeString(TestListExamples.java:46)
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000002c136012400.invokeVirtual(LambdaForm$DMH)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000002c136018400.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
 
 FAILURES!!!
-Tests run: 1,  Failures: 1
+Tests run: 9,  Failures: 3
 
